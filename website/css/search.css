@@ -1,0 +1,52 @@
+#searchButton {
+	text-align: center;
+	margin-top: 20px;
+
+}
+
+#filters {
+	margin-top: 20px;
+	/*background-color: rgb(159, 159, 159);*/
+	/*display: inline-block;*/
+	min-height: 350px;
+}
+
+.filterBox{
+	background-color: white;
+	border: solid;
+	border-width: 1px;
+	border-color: rgb(159, 159, 159);
+	margin: 10px 5px 10px 5px;
+	border-radius: 5px 5px 5px 5px;
+	padding: 4px;
+	/*line-height: 20px;*/
+}
+
+.filterItem {
+	margin-bottom: 5px;
+}
+
+filterBox > input {
+	
+}
+
+#b {
+	background-color: black;
+	/*display: inline-block;*/
+}
+
+.search-input {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#search_results {
+	margin-top: 15px;
+	margin-left: -30px;
+	list-style: none;
+}
+
+#search_results > li {
+	background-color: #BBBBBB;
+	margin-bottom: 5px;
+}

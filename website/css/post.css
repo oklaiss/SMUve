@@ -1,0 +1,118 @@
+.postForm fieldset {
+	text-align: center;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	border: 0em;
+  /*padding: .5em .5em .5em .5em;*/
+  background: white;
+	/*border: 0 none;*/
+	border-radius: 3px;
+	/*box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);*/
+	padding: 20px 30px;
+}
+
+.wide-input {
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+}
+
+.narrow-input {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+}
+
+#imageUpload {
+	margin-left: auto;
+	margin-right: auto;
+	width: 180px;
+}
+
+#pictureInstructions {
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+}
+
+#listing_title {
+
+}
+
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}*/
+
+/*POST RESULTS MARGINS TOP AND BOTTOM !!!!!!!!!!!!!!!!!!!*/
+
+#post_results {
+	margin-top: -7%;
+	margin-bottom: 1%;
+}
+
+#post_listing_button {
+	margin-left: 82%;
+	margin-bottom: 20px;
+}
+
+/* Headers */
+.post-title {
+	font-size: 20	px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+	margin-left: 2%;
+}
+.post-price {
+	font-size: 20	px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+	margin-left: 2%;
+}
+.post-desc {
+	font-size: 12	px;
+	/*text-transform: uppercase;*/
+	color: #2C3E50;
+	margin-bottom: 10px;
+	margin-left: 2%;
+}
+#listing_description {
+	font-weight: normal;
+	text-transform: none;
+	font-size: 18px;
+	color: #484848;
+	margin-bottom: 20px;
+}
+.post-condition {
+	font-weight: normal;
+	font-size: 15px;
+	color: #484848;
+	margin-bottom: 20px;
+}
+.post-category {
+	font-weight: normal;
+	font-size: 15px;
+	color: #484848;
+	margin-bottom: 20px;
+}
+.post-email {
+	font-weight: normal;
+	text-transform: none;
+	font-size: 15px;
+	color: #484848;
+	margin-bottom: 20px;
+}
+.post-subtitle-lg {
+    font-weight: normal;
+    font-size: 14px;
+    color: #484848;
+    margin-bottom: 12px;
+}

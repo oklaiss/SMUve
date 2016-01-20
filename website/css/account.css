@@ -1,0 +1,82 @@
+html body#search-body {
+  /*background-color: rgb(159, 159, 159);*/
+
+    /*height: 200px;*/
+    background: -webkit-linear-gradient(#4A4845, #C2CCC5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(4A4845, #C2CCC5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(4A4845, #C2CCC5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(4A4845, #C2CCC5); /* Standard syntax (must be last) */
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+
+html,body { height:100%; }
+
+.grid-body {
+	padding-top: 6%;
+}
+
+.thumbs {
+    width: 221px;
+    height: 160px;
+}
+
+.center-acct-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 250px;
+}
+
+#bigBox {
+	background-color: white;
+}
+
+#listingBox {
+    background-color: white;
+}
+
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+.fs-subtitle-lg {
+    font-weight: normal;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.btn-md {
+    padding: 10px 20px;
+    border-color: rgb(219, 0, 0);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgb(219, 0, 0);
+}
+
+
+.btn-sm {
+    padding: 5px 10px;
+    border-color: rgb(219, 0, 0);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgb(219, 0, 0);
+}

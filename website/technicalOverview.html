@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SMUve</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/technicalOverview.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body>
+        <section  class="bg-white"  id = "about">
+        <div class="container" >
+            <div class="row" >
+                <div class="col-lg-12 text-center" >
+                    <h2 class="section-heading">Technical Overview</h2>
+                        <p>
+                        Our site allows users to post listings for furniture or other items they want to sell and buy other user's items. If they lack transportation or are out of state at the time of purchase, they can request a driver on the site. 
+                        </p>
+
+                        <p>
+                        This site is intended to be used by SMU students or recent graduates. We limited use to SMU to create more trust since this service involves face to face interaction.
+                        </p>
+                </div>
+            </div>
+            <div class="row">
+                <h3 class="section-sub-heading">Feature Set</h3>
+                    <ul id = "features">
+                        <li>Ability to post a listing for any logged in user to see</li>
+                        <li>Search functionality with filters that allows users to find specific listings</li>
+                        <li>Driver request system</li>
+                        <li>Driver signup system</li>
+                    </ul>
+            </div>
+
+            <div class="row">
+                <h3 class="section-sub-heading">Implementation</h3>
+                <p>
+                    Our site was implemented with a MySQL backend, PHP middleware and JavaScript/HTML front end. We chose to use JQuery as our JavaScript framework and used the Sass CSS precompiler for some of our styling. We created an Android application that offers slimmed down, lightweight functionality.
+                </p>
+            </div>
+
+            <div class="row">
+                <h3 class="section-sub-heading">Technologies Used</h3>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <p class = "service-heading">Front end</p>
+                    <img class="img-responsive img-center" src="img/logos/html_css_js.jpg" alt="html/css/js/jquery" width="100%" height = "80%">
+                    <img class="img-responsive img-center" src="img/logos/bootstrap_logo.png" alt="" width="100%" height = "80%">
+                    <img class="img-responsive img-center" src="img/logos/sass-less.png" alt="" width="100%" height = "80%">
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <p class = "service-heading">Back end</p>
+                    <img class="img-responsive img-center" src="img/logos/php_sql.jpg" alt="hi" width="100%" height = "80%">
+                </div>
+            </div>
+
+            <div class="row">
+                <h3 class="section-sub-heading">Database Model</h3>
+                <img src="img/database_tables/smuve_db.PNG" alt="database image" height = "700" width = "700">
+            </div>
+
+            <div class="row">
+                <h3 class="section-sub-heading">API Documentation</h3>
+                <p>The two main APIs used in this site are Cloudinary and MailBoxLayer provided by APILayer. Cloudinary is used for image storage, resizing and quick thumbnail access. MainBoxLayer used for email verification to make sure emails are of the correct domain and are a valid address.</p>
+                <a href="https://mailboxlayer.com/" target="_blank"><img class="" src="img/logos/apilayer.png" alt="apilayer" width="30%" height = "30%"></a>
+                <a href="http://cloudinary.com/" target="_blank"><img class="" src="img/logos/cloudinary_logo.png" alt="apilayer" width="30%" height = "30%"></a>
+            </div>
+        </div>
+    </section>
+
+
+
+        <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script> -->
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+</body>

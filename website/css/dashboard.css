@@ -1,0 +1,118 @@
+html body {
+  background-color: rgb(159, 159, 159)
+}
+
+body, html { height:100% }
+
+/* Tabbed example */
+div.tabs {
+  text-align: center;
+  min-height: 14em;		/* No height: can grow if :target doesn't work */ /*height of the body"*/
+  /*height:100%;*/
+  position: relative;		/* Establish a containing block */
+  line-height: 1;		/* Easier to calculate with */
+  z-index: 0}			/* So that we can put other things behind */
+
+div.tabs > div {
+  width:24%;
+  display: inline-block;}		/* We want the buttons all on one line */
+
+div.tabs > div > a {
+  color: black;			/* Looks more like a button than a link */
+  background: #CCC;		/* Active tabs are light gray */
+  padding: .2em 8em .2em 8em ;		/* Some breathing space */
+  border: 0.1em outset #BBB;	/* Make it look like a button */
+  border-radius: 15px 15px 0px 0px;
+  border-bottom: 0.1em solid #CCC} /* Visually connect tab and tab body */
+
+/*The non-selected tabs*/
+div.tabs > div:not(:target) > a {
+  color:white;
+  border-bottom: none;		/* Make the bottom border disappear */
+  background: rgb(205,5,5)}		/* Inactive tabs are dark gray */
+
+/*The selected tab or default item*/
+div.tabs > div:target > a	/* Apply to the targeted item or... */
+{		/* ... to the default item */
+  border-bottom: 0.1em solid #CCC; /* Visually connect tab and tab body */
+  background: #CCC}		/* Active tab is light gray */
+
+ div.tab > :target #tab1 > a 
+ {
+    border-bottom: 0.1em solid #CCC; /* Visually connect tab and tab body */
+  background: #CCC;
+ }
+
+.tabBody
+{
+  /*height: 100%;*/
+}
+
+/*The content */
+div.tabs > div > div {
+  background: #CCC;		/* Light gray */
+  z-index: -2;			/* Behind, because the borders overlap */
+  left: 0; top: 1.3em;		/* The top needs some calculation... */
+  bottom: 0; right: 0;		/* Other sides flush with containing block */
+  overflow: auto;		/* Scroll bar if needed */
+  padding: 0.3em;		/* Looks better */
+  border: 0.1em outset #BBB}	/* 3D look */
+
+div.tabs > div:not(:target) > div { /* Protect CSS1 & CSS2 breowsers */
+  position: absolute }		/* All these DIVs overlap */
+  
+div.tabs > div:target > div, :target #default2 > div {
+  position: absolute;		/* All these DIVs overlap */
+  z-index: -1}			/* Raise it above the others */
+
+div.tabs :target {
+  outline: none}
+
+#searchBar {
+  border-radius: 10px 15px 10px 15px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+#searchButton
+{
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: white;
+  background: blue;
+  border: 0em;
+  padding: .5em .5em .5em .5em;
+}
+
+
+#searchButton:hover
+{
+  background:red;
+}
+
+#filters
+{
+  display:inline-block;
+  border: 1px solid black;
+  border-collapse: collapse;
+    margin: 10px 10px 10px 10px;
+  background-color: blue;
+  /*border-radius: 10px 15px 10px 15px;*/
+
+}
+
+th{
+    border: 1px solid black;
+    border-radius: 10px 15px 10px 15px;
+    color:white;
+    padding: 2px 4px 2px 4px;
+}
+
+#filters
+{
+}
+/*
+.tabBody{
+    top: 50%;
+    position:absolute;
+}
+*/

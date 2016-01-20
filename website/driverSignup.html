@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SMUve - Become a SMUver</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/account.css" rel="stylesheet">
+    <link href="css/post.css" rel="stylesheet">
+    <link href="css/driverSignup.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/driverSignup.js"></script>
+
+
+    <script src="js/jquery.cloudinary.js"></script>
+    <script src="js/jquery.ui.widget.js"></script>
+    <script src="js/jquery.iframe-transport.js"></script>
+    <script src="js/jquery.fileupload.js"></script>
+    <script src="js/imageUpload.js"></script>
+
+</head>
+
+<body id="search-body" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="/index.html">SMUve</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/search.html">Search</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/post.html">Post</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/bids.html">Bids</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="smuverDashboard.html">SMUvers</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/myAccount.html">My Account</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="grid-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1" id="bigBox">
+                <!-- Post Listing Form -->
+                <form class="postForm" accept-charset="utf-8" id = "signup_form">
+                    <fieldset>
+                        <h2 class="fs-title">Become a SMUver!</h2>
+
+                        <h3 class="fs-subtitle">Please enter your contact information</h3>
+                        <input class="form-control wide-input" type="text" id="phone_number" placeholder="e.g. (xxx)-xxx-xxxx" />
+                        <p class = "warning" id = "phone_warning">Please enter a valid 10 digit phone number</p>
+
+                        <h3 class="fs-subtitle">Enter the model and year of your vehicle</h3>
+                        <input class="form-control wide-input" type="text" id="model" placeholder="Toyota Corolla"/>
+                        <input class="form-control narrow-input" type="text" id="year" placeholder="2000"/>
+
+                        <p class = "warning" id = "year_warning">You must enter a valid 4 digit year</p>
+                        <p class = "warning" id = "model_warning">You must enter the model of your car</p>
+
+                        <h3 class="fs-subtitle">Would you like to include any extra information about your vehicle</h3>
+                        <textarea class="form-control" id = "extra_info" rows="9" id="description"></textarea>
+
+                        <h3 class="fs-subtitle">Are you willing to provide temporary storage for out-of-state buyers?</h3>
+                        <label class="radio-inline"><input type="radio" id = "yes"name="r2" value="yes" >Yes</label>
+                        <label class="radio-inline"><input type="radio" id = "no" name="r2" value="no" >No</label>
+
+                        <br>
+                        <br>
+
+                        <label>As a driver, it is your responsibility to be the caretaker of the items you are transporting and/or storing
+                        </label>
+
+                        <label><input type="checkbox" id = "release" value="">I hereby certify that my vehicle is in good driving condition
+                            and realize that I am responsible for maintainin the conditions of users' items</label>
+                        <p class = "warning" id = "release_warning">You must confirm that you have read this release before we can review your
+                            information</p>
+
+                    </fieldset>
+                </form>
+
+                <form class="postForm">
+                    <fieldset>
+                        <button type="submit" id="apply" class="btn btn-md">Apply</button>
+                    </fieldset>
+                </form>
+
+                <p id = "disclaimer">All applicants are subject to our terms and conditions and will be reviewed by the smuve team</p>
+
+            </div>
+        </div>
+    </div>
+    </div>
